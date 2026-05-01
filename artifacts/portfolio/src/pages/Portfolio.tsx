@@ -52,7 +52,7 @@ const STAGGER = {
 };
 
 const titles = [
-  "ML Engineer",
+  "Aspiring ML Engineer",
   "Deep Learning Enthusiast",
   "Open Source Contributor",
   "IIT-R National Finalist"
