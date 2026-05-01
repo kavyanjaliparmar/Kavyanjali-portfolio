@@ -544,29 +544,20 @@ export default function Portfolio() {
               <div className="space-y-4">
                 <motion.div variants={FADE_UP} whileHover={{ scale: 1.02 }} className="p-5 bg-card border border-border rounded-2xl flex items-start gap-4">
                   <div className="p-2 bg-primary/10 rounded-xl text-primary shrink-0">
-                    <Cloud className="w-5 h-5" />
+                    <Brain className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground">Machine Learning A-Z</h4>
-                    <p className="text-sm text-muted-foreground mt-1">Stanford University / DeepLearning.AI</p>
+                    <h4 className="font-bold text-foreground">Generative AI</h4>
+                    <p className="text-sm text-muted-foreground mt-1">Coursera</p>
                   </div>
                 </motion.div>
                 <motion.div variants={FADE_UP} whileHover={{ scale: 1.02 }} className="p-5 bg-card border border-border rounded-2xl flex items-start gap-4">
                   <div className="p-2 bg-accent/10 rounded-xl text-accent shrink-0">
-                    <Brain className="w-5 h-5" />
+                    <Cloud className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground">Deep Learning Specialization</h4>
-                    <p className="text-sm text-muted-foreground mt-1">DeepLearning.AI</p>
-                  </div>
-                </motion.div>
-                <motion.div variants={FADE_UP} whileHover={{ scale: 1.02 }} className="p-5 bg-card border border-border rounded-2xl flex items-start gap-4">
-                  <div className="p-2 bg-chart-3/10 rounded-xl text-chart-3 shrink-0">
-                    <Code2 className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground">Python for Data Science</h4>
-                    <p className="text-sm text-muted-foreground mt-1">IBM</p>
+                    <h4 className="font-bold text-foreground">Cloud & ML Fundamentals</h4>
+                    <p className="text-sm text-muted-foreground mt-1">AWS Skill Builder</p>
                   </div>
                 </motion.div>
               </div>
