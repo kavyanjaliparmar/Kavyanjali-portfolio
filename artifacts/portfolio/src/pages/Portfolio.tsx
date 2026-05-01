@@ -427,7 +427,7 @@ export default function Portfolio() {
 
             <div className="grid md:grid-cols-3 gap-8">
               
-              <motion.div variants={FADE_UP} whileHover={{ y: -5 }} className="group relative bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all flex flex-col h-full">
+              <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-shadow flex flex-col h-full">
                 <div className="h-32 bg-gradient-to-br from-primary/20 to-primary/5 relative flex items-center justify-center p-6 border-b border-border/50">
                   <Map className="w-12 h-12 text-primary" />
                 </div>
@@ -441,14 +441,9 @@ export default function Portfolio() {
                     <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1.5 rounded-lg">NDVI</span>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-card/95 backdrop-blur-sm p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center border border-primary/20 rounded-3xl">
-                  <button className="px-6 py-2.5 bg-primary text-primary-foreground rounded-xl font-medium shadow-lg flex items-center gap-2">
-                    View Details
-                  </button>
-                </div>
               </motion.div>
 
-              <motion.div variants={FADE_UP} whileHover={{ y: -5 }} className="group relative bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent/5 transition-all flex flex-col h-full">
+              <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent/10 transition-shadow flex flex-col h-full">
                 <div className="h-32 bg-gradient-to-br from-accent/20 to-accent/5 relative flex items-center justify-center p-6 border-b border-border/50">
                   <Fingerprint className="w-12 h-12 text-accent" />
                 </div>
@@ -462,14 +457,9 @@ export default function Portfolio() {
                     <span className="text-xs font-medium text-accent bg-accent/10 px-3 py-1.5 rounded-lg">CNN</span>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-card/95 backdrop-blur-sm p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center border border-accent/20 rounded-3xl">
-                  <button className="px-6 py-2.5 bg-accent text-accent-foreground rounded-xl font-medium shadow-lg flex items-center gap-2">
-                    View Details
-                  </button>
-                </div>
               </motion.div>
 
-              <motion.div variants={FADE_UP} whileHover={{ y: -5 }} className="group relative bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-chart-3/5 transition-all flex flex-col h-full">
+              <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-chart-3/10 transition-shadow flex flex-col h-full">
                 <div className="h-32 bg-gradient-to-br from-chart-3/20 to-chart-3/5 relative flex items-center justify-center p-6 border-b border-border/50">
                   <Brain className="w-12 h-12 text-chart-3" />
                 </div>
@@ -482,11 +472,6 @@ export default function Portfolio() {
                     <span className="text-xs font-medium text-chart-3 bg-chart-3/10 px-3 py-1.5 rounded-lg">GenAI</span>
                     <span className="text-xs font-medium text-chart-3 bg-chart-3/10 px-3 py-1.5 rounded-lg">Prompt Eng.</span>
                   </div>
-                </div>
-                <div className="absolute inset-0 bg-card/95 backdrop-blur-sm p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center border border-chart-3/20 rounded-3xl">
-                  <button className="px-6 py-2.5 bg-chart-3 text-primary-foreground rounded-xl font-medium shadow-lg flex items-center gap-2">
-                    View Details
-                  </button>
                 </div>
               </motion.div>
 
