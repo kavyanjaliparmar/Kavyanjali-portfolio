@@ -172,7 +172,7 @@ export default function Portfolio() {
             <span className="text-muted-foreground">Welcome to my digital space</span>
           </motion.div>
           <motion.h1 variants={FADE_UP} className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-300% animate-gradient">Kavyanjali</span>
+            Namaste, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-300% animate-gradient">Kavyanjali</span>
           </motion.h1>
           <motion.div variants={FADE_UP} className="text-2xl md:text-4xl text-muted-foreground font-medium mb-8 h-12 flex items-center">
             <AnimatePresence mode="wait">
