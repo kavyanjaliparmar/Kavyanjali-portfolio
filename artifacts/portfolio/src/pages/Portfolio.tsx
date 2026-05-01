@@ -122,7 +122,7 @@ const Portfolio = () => {
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="p-6 bg-background border border-border rounded-xl flex flex-col justify-center items-center text-center gap-3">
+                <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="p-6 bg-background border border-border rounded-xl flex flex-col justify-center items-center text-center gap-3 cursor-default">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                     <Rocket className="w-6 h-6" />
                   </div>
@@ -130,8 +130,8 @@ const Portfolio = () => {
                     <div className="font-bold text-xl">Top 25</div>
                     <div className="text-sm text-muted-foreground">National Finalist IIT-R</div>
                   </div>
-                </div>
-                <div className="p-6 bg-background border border-border rounded-xl flex flex-col justify-center items-center text-center gap-3">
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="p-6 bg-background border border-border rounded-xl flex flex-col justify-center items-center text-center gap-3 cursor-default">
                   <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent">
                     <Code2 className="w-6 h-6" />
                   </div>
@@ -139,8 +139,8 @@ const Portfolio = () => {
                     <div className="font-bold text-xl">ML Intern</div>
                     <div className="text-sm text-muted-foreground">Future Interns</div>
                   </div>
-                </div>
-                <div className="p-6 bg-background border border-border rounded-xl flex flex-col justify-center items-center text-center gap-3">
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="p-6 bg-background border border-border rounded-xl flex flex-col justify-center items-center text-center gap-3 cursor-default">
                   <div className="w-12 h-12 rounded-full bg-chart-3/10 flex items-center justify-center text-chart-3">
                     <Layout className="w-6 h-6" />
                   </div>
@@ -148,8 +148,8 @@ const Portfolio = () => {
                     <div className="font-bold text-xl">8.48</div>
                     <div className="text-sm text-muted-foreground">CGPA</div>
                   </div>
-                </div>
-                <div className="p-6 bg-background border border-border rounded-xl flex flex-col justify-center items-center text-center gap-3">
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="p-6 bg-background border border-border rounded-xl flex flex-col justify-center items-center text-center gap-3 cursor-default">
                   <div className="w-12 h-12 rounded-full bg-chart-4/10 flex items-center justify-center text-chart-4">
                     <Cloud className="w-6 h-6" />
                   </div>
@@ -157,7 +157,7 @@ const Portfolio = () => {
                     <div className="font-bold text-xl">Contributor</div>
                     <div className="text-sm text-muted-foreground">GSSoC</div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </motion.div>
@@ -175,7 +175,7 @@ const Portfolio = () => {
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Programming & Frameworks */}
-              <motion.div variants={FADE_UP} className="p-6 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors">
+              <motion.div variants={FADE_UP} whileHover={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="p-6 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors">
                 <h4 className="text-xl font-semibold mb-6 flex items-center gap-2">Languages & Libraries</h4>
                 <div className="flex flex-wrap gap-3">
                   {[
@@ -197,7 +197,7 @@ const Portfolio = () => {
               </motion.div>
 
               {/* Tools & DBs */}
-              <motion.div variants={FADE_UP} className="p-6 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors">
+              <motion.div variants={FADE_UP} whileHover={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="p-6 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors">
                 <h4 className="text-xl font-semibold mb-6 flex items-center gap-2">Tools & Databases</h4>
                 <div className="flex flex-wrap gap-3">
                   {[
@@ -217,7 +217,7 @@ const Portfolio = () => {
               </motion.div>
 
               {/* Concepts */}
-              <motion.div variants={FADE_UP} className="p-6 bg-card border border-border rounded-xl md:col-span-2 hover:border-primary/30 transition-colors">
+              <motion.div variants={FADE_UP} whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="p-6 bg-card border border-border rounded-xl md:col-span-2 hover:border-primary/30 transition-colors">
                 <h4 className="text-xl font-semibold mb-6">Core Concepts</h4>
                 <div className="flex flex-wrap gap-2">
                   {["OOP", "System Design", "Problem-Solving", "Data Structures", "Operating Systems", "DBMS"].map((concept) => (
@@ -247,7 +247,7 @@ const Portfolio = () => {
                 <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-background bg-primary text-primary-foreground shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                   <BriefcaseIcon className="w-4 h-4" />
                 </div>
-                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 bg-card border border-border rounded-xl shadow hover:border-primary/50 transition-colors">
+                <motion.div whileHover={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 bg-card border border-border rounded-xl shadow hover:border-primary/50 transition-colors">
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                     <h4 className="font-bold text-lg text-primary">Machine Learning Intern</h4>
                     <time className="text-sm font-mono text-muted-foreground">Mar 2026 – Apr 2026</time>
@@ -258,14 +258,14 @@ const Portfolio = () => {
                     <li>Built an NLP-based ticket classification system and resume screening tool.</li>
                     <li>Utilized Python, Pandas, and statsmodels to analyze and preprocess data efficiently.</li>
                   </ul>
-                </div>
+                </motion.div>
               </motion.div>
 
               <motion.div variants={FADE_UP} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-background bg-accent text-accent-foreground shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                   <Github className="w-4 h-4" />
                 </div>
-                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 bg-card border border-border rounded-xl shadow hover:border-accent/50 transition-colors">
+                <motion.div whileHover={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 bg-card border border-border rounded-xl shadow hover:border-accent/50 transition-colors">
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                     <h4 className="font-bold text-lg text-accent">Contributor (AI/Agents Track)</h4>
                     <time className="text-sm font-mono text-muted-foreground">Apr 2026 – Present</time>
@@ -276,7 +276,7 @@ const Portfolio = () => {
                     <li>Collaborating globally with developers using Git and GitHub workflows.</li>
                     <li>Enhancing documentation and optimizing existing machine learning codebases.</li>
                   </ul>
-                </div>
+                </motion.div>
               </motion.div>
 
             </div>
@@ -295,7 +295,7 @@ const Portfolio = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               
-              <motion.div variants={FADE_UP} className="group flex flex-col bg-card border border-border rounded-xl overflow-hidden hover:-translate-y-1 hover:border-primary/50 transition-all shadow-lg hover:shadow-primary/10">
+              <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="group flex flex-col bg-card border border-border rounded-xl overflow-hidden hover:border-primary/50 transition-all shadow-lg hover:shadow-primary/10">
                 <div className="h-48 bg-background relative overflow-hidden flex items-center justify-center border-b border-border/50">
                   <Map className="w-16 h-16 text-primary/20 group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent"></div>
@@ -312,7 +312,7 @@ const Portfolio = () => {
                 </div>
               </motion.div>
 
-              <motion.div variants={FADE_UP} className="group flex flex-col bg-card border border-border rounded-xl overflow-hidden hover:-translate-y-1 hover:border-accent/50 transition-all shadow-lg hover:shadow-accent/10">
+              <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="group flex flex-col bg-card border border-border rounded-xl overflow-hidden hover:border-accent/50 transition-all shadow-lg hover:shadow-accent/10">
                 <div className="h-48 bg-background relative overflow-hidden flex items-center justify-center border-b border-border/50">
                   <Fingerprint className="w-16 h-16 text-accent/20 group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent"></div>
@@ -329,7 +329,7 @@ const Portfolio = () => {
                 </div>
               </motion.div>
 
-              <motion.div variants={FADE_UP} className="group flex flex-col bg-card border border-border rounded-xl overflow-hidden hover:-translate-y-1 hover:border-chart-3/50 transition-all shadow-lg hover:shadow-chart-3/10">
+              <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="group flex flex-col bg-card border border-border rounded-xl overflow-hidden hover:border-chart-3/50 transition-all shadow-lg hover:shadow-chart-3/10">
                 <div className="h-48 bg-background relative overflow-hidden flex items-center justify-center border-b border-border/50">
                   <Rocket className="w-16 h-16 text-chart-3/20 group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent"></div>
@@ -362,16 +362,16 @@ const Portfolio = () => {
                 Education
               </h3>
               <div className="space-y-6">
-                <motion.div variants={FADE_UP} className="p-5 border border-border rounded-xl bg-background hover:border-primary/30 transition-colors">
+                <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="p-5 border border-border rounded-xl bg-background hover:border-primary/30 transition-colors">
                   <h4 className="font-bold text-lg">B.Tech CS (AI & ML)</h4>
                   <p className="text-muted-foreground">Graphic Era Hill University • 2023 - Present</p>
                   <div className="mt-2 text-sm font-mono text-primary">CGPA: 8.48</div>
                 </motion.div>
-                <motion.div variants={FADE_UP} className="p-5 border border-border rounded-xl bg-background hover:border-primary/30 transition-colors">
+                <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="p-5 border border-border rounded-xl bg-background hover:border-primary/30 transition-colors">
                   <h4 className="font-bold text-lg">ISC (Class 12)</h4>
                   <p className="text-muted-foreground">Welham Girls' School, Dehradun • 2023</p>
                 </motion.div>
-                <motion.div variants={FADE_UP} className="p-5 border border-border rounded-xl bg-background hover:border-primary/30 transition-colors">
+                <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="p-5 border border-border rounded-xl bg-background hover:border-primary/30 transition-colors">
                   <h4 className="font-bold text-lg">ICSE (Class 10)</h4>
                   <p className="text-muted-foreground">Welham Girls' School, Dehradun • 2021</p>
                 </motion.div>
@@ -384,7 +384,7 @@ const Portfolio = () => {
                 Certifications
               </h3>
               <div className="space-y-4">
-                <motion.div variants={FADE_UP} className="flex items-center gap-4 p-5 border border-border rounded-xl bg-background hover:border-accent/30 transition-colors">
+                <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="flex items-center gap-4 p-5 border border-border rounded-xl bg-background hover:border-accent/30 transition-colors">
                   <div className="w-12 h-12 bg-accent/10 text-accent flex items-center justify-center rounded-full shrink-0">
                     <Brain className="w-6 h-6" />
                   </div>
@@ -393,7 +393,7 @@ const Portfolio = () => {
                     <p className="text-sm text-muted-foreground">Coursera</p>
                   </div>
                 </motion.div>
-                <motion.div variants={FADE_UP} className="flex items-center gap-4 p-5 border border-border rounded-xl bg-background hover:border-accent/30 transition-colors">
+                <motion.div variants={FADE_UP} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }} className="flex items-center gap-4 p-5 border border-border rounded-xl bg-background hover:border-accent/30 transition-colors">
                   <div className="w-12 h-12 bg-accent/10 text-accent flex items-center justify-center rounded-full shrink-0">
                     <Cloud className="w-6 h-6" />
                   </div>
